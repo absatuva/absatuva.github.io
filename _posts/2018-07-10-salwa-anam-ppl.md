@@ -1,8 +1,9 @@
 ---
 layout: post
 categories: people
-title: Md Ibrahim Sabit
+title: Salwa Anam
 date: 2018-07-18 16:25:06 +0500
 affiliation: PhD student, CE
-email: mis5ty@virginia.edu
+isStudent: 1
+email: sa2qw@virginia.edu
 ---

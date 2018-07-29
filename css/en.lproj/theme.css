@@ -9,11 +9,6 @@ body {
 
 .footer {
     text-align: center;
-    background-color: #232d4a;
-}
-
-.header {
-    background-color: #232d4a;
 }
 
 .footer a {
@@ -54,18 +49,3 @@ body {
 .author a {
     color: #ee4444;
 }
-
-.navbar {
-    background-color: #232d4a;
-}
-
-.navbar a {
-    color: #000;
-}
-.navbar brand {
-    color: #000;
-}
-.navbar-nav{
-    background-color: #232d4a;
-}
-

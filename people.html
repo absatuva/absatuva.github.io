@@ -12,11 +12,34 @@ layout: default
             <th>Affiliation</th>
         </tr>
         {%for post in sortedPosts %}
-            <tr>
-                <td>{{ post.title }}</td>
-                <td>{{ post.email }}</td>
-                <td>{{ post.affiliation }}</td>
-                </tr>
+            {% if post.isStudent == 1 %}
+                <tr>
+                    <td>{{ post.title }}</td>
+                    <td>{{ post.email }}</td>
+                    <td>{{ post.affiliation }}</td>
+                    </tr>
+                {% endif %}
         {% endfor %}
         </table>
+</div>
+
+<div class="well">
+    <h1>Alumni</h1>
+    {% assign sortedPosts = site.categories.people | sort: 'title' %}
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Affiliation</th>
+        </tr>
+        {%for post in sortedPosts %}
+        {% if post.isStudent == 0 %}
+        <tr>
+            <td>{{ post.title }}</td>
+            <td>{{ post.email }}</td>
+            <td>{{ post.affiliation }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </table>
 </div>

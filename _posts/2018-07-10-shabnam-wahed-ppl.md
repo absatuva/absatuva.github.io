@@ -1,8 +1,9 @@
 ---
 layout: post
 categories: people
-title: Antik Mallick
+title: Shabnam Wahed
 date: 2018-07-18 16:25:06 +0500
 affiliation: Graduate student, ECE
-email: am2ps@virginia.edu
+isStudent: 1
+email: sw2wm@virginia.edu
 ---
