@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>People</h1>
+<div class="well">
+    <h2>Current students</h2>
+    {% assign sortedPosts = site.categories.people | sort: 'title' %}
+    {%for post in sortedPosts %}
+        <li> {{ post.title }}, {{ post.affiliation }} ({{ post.email }}) </li>
+    {% endfor %}
+</div>
+
+<!---->
+<!---->
+<!--<div class="well">-->
+<!--    <h2>Current students</h2>-->
+<!---->
+<!--</div>-->

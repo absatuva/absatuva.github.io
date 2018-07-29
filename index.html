@@ -1,10 +1,54 @@
-<!DOCTYPE html>
-<html>
-<body>
+---
+layout: default
+---
+<div class="article">
+    <div class="well">
+        Welcome to Association of Bangladeshi Students at University of Virginia (ABS@UVA).
+            <br>
+            <br>
+            Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions.
+            <br>
+            <br>
+            Our student organization does not restrict its membership, programs, or activities on the basis of age, color, disability, gender identity, marital status, national or ethnic origin, political affiliation, race, religion, sex (including pregnancy), sexual orientation, veteran status, and family and genetic information. Notwithstanding these requirements, a CIO may petition to restrict its membership based on gender (e.g. all-male or all-female a cappella groups) or an ability to perform the activities related to the organization’s purpose by filing a written request with the Office of the Dean of Students. In evaluating any such requests, the University will look not merely to the constitution of an organization but to its actual practices and operations.
+    </div>
+</div>
 
-<h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
 
-</body>
-</html>
+<div class="article">
+    <div class="well">
+        <h2>Recent Posts</h2>
+    </div>
+</div>
+<!--<div class="article">-->
+<!--    <div class="well">-->
+        {% for post in paginator.posts %}
+            <h4><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h4>
+            {% if site.comments and post.comments %}
+                {% if site.disqus != '' %}
+                <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url | slugify }}">Comments</a></p>
+                {% elsif site.isso != '' %}
+                <p class="author"><a href="{{ site.baseurl }}{{ post.url }}{{ site.isso_suffix }}#isso-thread">Comments</a></p>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+<!--        <div class="content">-->
+<!--            {{ post.content }}-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
+      {% else %}
+        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
+      {% endif %}
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
+  {% endif %}
+</div>
