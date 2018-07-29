@@ -1,5 +1,5 @@
 ---
-layout: people
+layout: post
 categories: people
 title: Mirza Elahi
 affiliation: PhD student, ECE

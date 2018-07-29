@@ -1,7 +1,7 @@
 ---
-layout: people
+layout: post
 categories: people
-title: Antick Mallick
+title: Antik Mallick
 date: 2018-07-18 16:25:06 +0500
 affiliation: Graduate student, ECE
 email: am2ps@virginia.edu

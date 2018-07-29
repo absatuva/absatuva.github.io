@@ -1,5 +1,5 @@
 ---
-layout: people
+layout: post
 categories: people
 title: Abu Rubaiyat
 affiliation: PhD student, ECE
