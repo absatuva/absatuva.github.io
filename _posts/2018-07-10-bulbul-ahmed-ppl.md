@@ -1,9 +1,9 @@
 ---
 layout: post
 categories: people
-title: Mohsin Yusuf Ahmed
+title: Bulbul Ahmed
 date: 2018-07-18 16:25:06 +0500
-affiliation: PhD student, CS
+affiliation: Graduate Student, ECE
 isStudent: 1
-email: mya5dm@virginia.edu 
+email: ba3fw@virginia.edu
 ---
