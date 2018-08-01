@@ -14,7 +14,7 @@ Housing is one of the most commonly asked questions by incoming students. In gen
 
 At UVA, campus is called `ground`.
 
-> Before one decides over `on campus` vs. `off campus` housing, s/he is encouraged to read [this article](https://offgroundshousing.student.virginia.edu/files/resources/resource_3857.pdf).
+> Before one decides on `on campus` vs. `off campus` housing, s/he is encouraged to read [this article](https://offgroundshousing.student.virginia.edu/files/resources/resource_3857.pdf).
 
 ### On ground housing
 
